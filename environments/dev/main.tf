@@ -35,3 +35,9 @@ module "bastion" {
   subnets = var.subnets
   pip=var.pip
 }
+module "linux_virtual_machines" {
+  depends_on = [ module.subnets, module.network_interface, module.public_ip ]
+  source = "../../modules/azurerm_Linux_virtual_machine"
+  vms=var.vms
+  nic=var.nic
+}

@@ -4,3 +4,4 @@ variable "rgs" {}
 variable "vnets" {}
 variable "pip" {}
 variable "bastion" {}
+variable "vms" {}
