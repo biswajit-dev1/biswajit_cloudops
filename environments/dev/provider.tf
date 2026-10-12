@@ -8,8 +8,8 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-wfm-test1"
-    storage_account_name = "mystorage0309"
+    resource_group_name  = "Backend-wfm-test1"
+    storage_account_name = "backendwfmtest1"
     container_name       = "tfstate"
     key                  = "wfm-lz.tfstate"
   }
