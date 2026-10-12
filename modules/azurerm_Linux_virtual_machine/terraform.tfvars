@@ -1,9 +1,9 @@
 vms={
   nic1={
   name                = "frontendvm"
-  resource_group_name = "rg-wfm"
+  resource_group_name = "rg-wfm-test1"
   location            = "centralindia"
-  size                = "Standard_DC1ds_v3"
+  size                = "Standard_D2s_v3"
   admin_username      = "adminuser"
   admin_password="Password@123"
   disable_password_authentication=false
@@ -16,9 +16,9 @@ vms={
   },
   nic2={
   name                = "backendvm"
-  resource_group_name = "rg-wfm"
+  resource_group_name = "rg-wfm-test1"
   location            = "centralindia"
-  size                = "Standard_DC1ds_v3"
+  size                = "Standard_D2s_v3"
   admin_username      = "adminuser"
   admin_password="Password@123"
   disable_password_authentication=false
@@ -31,9 +31,9 @@ vms={
   }
   nic3={
   name                = "databasevm"
-  resource_group_name = "rg-wfm"
+  resource_group_name = "rg-wfm-test1"
   location            = "centralindia"
-  size                = "Standard_DC1ds_v3"
+  size                = "Standard_D2s_v3"
   admin_username      = "adminuser"
   admin_password="Password@123"
   disable_password_authentication=false
@@ -49,7 +49,7 @@ nic={
   nic1={
   nic_name            = "frontend-nic"
   location            = "central india"
-  resource_group_name = "rg-wfm"
+  resource_group_name = "rg-wfm-test1"
 
     ipconfig_name                 = "internal"
     private_ip_address_allocation = "Dynamic"
@@ -58,7 +58,7 @@ nic={
   nic2={
   nic_name            = "backend_vm-nic"
   location            = "central india"
-  resource_group_name = "rg-wfm"
+  resource_group_name = "rg-wfm-test1"
 
     ipconfig_name                 = "internal"
     private_ip_address_allocation = "Dynamic"
@@ -67,7 +67,7 @@ nic={
   nic3={
   nic_name            = "database_vm-nic"
   location            = "central india"
-  resource_group_name = "rg-wfm"
+  resource_group_name = "rg-wfm-test1"
 
     ipconfig_name                 = "internal"
     private_ip_address_allocation = "Dynamic"
