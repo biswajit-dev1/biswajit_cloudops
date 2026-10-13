@@ -87,50 +87,52 @@ pip={
    pip_key="pip1"
   }
   }
-  vms={
-  nic1={
-  name                = "frontendvm"
-  resource_group_name = "rg-wfm-test1"
-  location            = "centralindia"
-  size                = "Standard_D2s_v3"
-  admin_username      = "adminuser"
-  admin_password="Password@123"
-  disable_password_authentication=false
-  caching              = "ReadWrite"
-  storage_account_type = "Standard_LRS"
-  publisher = "Canonical"
-  offer     = "0001-com-ubuntu-server-jammy"
-  sku       = "22_04-lts-gen2"
-  version   = "latest"
-  },
-  nic2={
-  name                = "backendvm"
-  resource_group_name = "rg-wfm-test1"
-  location            = "centralindia"
-  size                = "Standard_D2s_v3"
-  admin_username      = "adminuser"
-  admin_password="Password@123"
-  disable_password_authentication=false
-  caching              = "ReadWrite"
-  storage_account_type = "Standard_LRS"
-  publisher = "Canonical"
-  offer     = "0001-com-ubuntu-server-jammy"
-  sku       = "22_04-lts-gen2"
-  version   = "latest"
+  vms = {
+  nic1 = {
+    name                            = "frontendvm"
+    resource_group_name             = "rg-wfm-test1"
+    location                        = "centralindia"
+    size                            = "Standard_D2alds_v6"
+    admin_username                  = "adminuser"
+    admin_password                  = "Password@123"
+    disable_password_authentication = false
+    caching                         = "ReadWrite"
+    storage_account_type            = "Standard_LRS"
+    publisher                       = "Canonical"
+    offer                           = "0001-com-ubuntu-server-jammy"
+    sku                             = "22_04-lts-gen2"
+    version                         = "latest"
   }
-  nic3={
-  name                = "databasevm"
-  resource_group_name = "rg-wfm-test1"
-  location            = "centralindia"
-  size                = "Standard_D2s_v3"
-  admin_username      = "adminuser"
-  admin_password="Password@123"
-  disable_password_authentication=false
-  caching              = "ReadWrite"
-  storage_account_type = "Standard_LRS"
-  publisher = "Canonical"
-  offer     = "0001-com-ubuntu-server-jammy"
-  sku       = "22_04-lts-gen2"
-  version   = "latest"
-}
+
+  nic2 = {
+    name                            = "backendvm"
+    resource_group_name             = "rg-wfm-test1"
+    location                        = "centralindia"
+    size                            = "Standard_D2alds_v6"
+    admin_username                  = "adminuser"
+    admin_password                  = "Password@123"
+    disable_password_authentication = false
+    caching                         = "ReadWrite"
+    storage_account_type            = "Standard_LRS"
+    publisher                       = "Canonical"
+    offer                           = "0001-com-ubuntu-server-jammy"
+    sku                             = "22_04-lts-gen2"
+    version                         = "latest"
+  }
+
+  nic3 = {
+    name                            = "databasevm"
+    resource_group_name             = "rg-wfm-test1"
+    location                        = "centralindia"
+    size                            = "Standard_D2alds_v6"
+    admin_username                  = "adminuser"
+    admin_password                  = "Password@123"
+    disable_password_authentication = false
+    caching                         = "ReadWrite"
+    storage_account_type            = "Standard_LRS"
+    publisher                       = "Canonical"
+    offer                           = "0001-com-ubuntu-server-jammy"
+    sku                             = "22_04-lts-gen2"
+    version                         = "latest"
+  }
 }
